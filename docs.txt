@@ -1,0 +1,18 @@
+This is an Emulator of the LMC (Little Man Computer)
+
+
+instruction set:
+
+
+Numeric Mnemonic Instruction	Desc	
+1xx	ADD	 Add		Add value stored in xx to acc
+2xx	SUB	 Subtract	Subtract value stored in xx from acc
+3xx	STA	 Store		Store the contents of acc in addr xx 		
+5xx	LDA	 Load		Load the value from xx into acc
+6xx	BRA	 Branch		Set PC to xx	
+7xx	BRZ	 Branch Zero	If acc == 000 set PC to xx
+8xx	BRP	 Branch +	If acc > 0 set PC to xx	
+901	INP	 Input		Fetch value from User store inacc
+902	OUT	 Output		Output value in acc to OUTBOX
+000	HLT	 Halt		Stop the program
+	DAT	 Data		Assembler instruction that loads value into next mailbox 
